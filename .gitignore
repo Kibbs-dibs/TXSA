@@ -1,0 +1,5 @@
+# Ignore raw and processed datasets
+*.csv
+training.1600000.processed.noemoticon.csv
+sentiment140_cleaned.csv
+sentiment140.zip
