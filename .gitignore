@@ -3,3 +3,6 @@
 training.1600000.processed.noemoticon.csv
 sentiment140_cleaned.csv
 sentiment140.zip
+
+# Ignore model checkpoints and logs
+best_distilbert_model
