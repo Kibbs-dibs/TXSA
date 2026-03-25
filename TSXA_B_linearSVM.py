@@ -27,7 +27,7 @@ vectorizer = TfidfVectorizer(
     max_features=None,  # no max limit
     ngram_range=(1, 3),  # unigrams + bigrams + trigrams
     sublinear_tf=True,  # 1 + log(tf) instead of raw count
-    min_df=2,  # ignore terms appearing in fewer than 3 docs
+    min_df=2,  # ignore terms appearing in fewer than x docs
     strip_accents="unicode",
     analyzer="word",
     token_pattern=r"\w{2,}",  # tokens of at least 2 chars
@@ -42,7 +42,9 @@ print(
 
 # Train LinearSVC
 # clf = LinearSVC(C=0.5, max_iter=1000, dual="auto")
+# t0 = time.time()
 # clf.fit(X_train_tfidf, y_train)
+# print(f"SVC done in {time.time() - t0:.1f}s")
 
 # Train LinearSVC
 # Alternative: do a grid search to find best hyperparameters
